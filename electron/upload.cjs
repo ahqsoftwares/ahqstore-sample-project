@@ -37510,7 +37510,7 @@ var __webpack_exports__ = {};
 
   const base = {
     owner: "ahqsoftwares",
-    repo: "alang",
+    repo: "ahqstore-sample-project",
     release_id: process.env.releaseid
   };
 
