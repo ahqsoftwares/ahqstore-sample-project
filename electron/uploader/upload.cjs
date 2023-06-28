@@ -30,6 +30,6 @@
     const file = files[i];
 
     if (file.endsWith(".zip") || file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".appImage") || file.endsWith(".AppImage") || file.endsWith(".appimage") || file.endsWith(".deb")) {
-      publish(file)
+      publish(file);
     }
   }
