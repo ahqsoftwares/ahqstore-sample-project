@@ -32,9 +32,8 @@ jobs:
           with:
             result-encoding: string
             script: |
-              const {
-                version
-              } = await (require("./index.js")());
+              const version = await require("./index.js");
+              console.log(`Version: ${version}`);
   
               return version;
           env:

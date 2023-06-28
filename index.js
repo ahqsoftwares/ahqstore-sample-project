@@ -23,4 +23,4 @@ module.exports = async function() {
     });
 
     return release.data.id
-};
+}()
