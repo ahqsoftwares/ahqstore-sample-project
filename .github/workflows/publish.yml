@@ -1,0 +1,105 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+    create_release:
+      name: Create a Release
+      outputs:
+        release_id: ${{ steps.create-release.outputs.result }}
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Setup Node
+          uses: actions/setup-node@v3
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v2
+
+        - name: Install Dependencies
+          run: pnpm install
+        
+        - name: Get Release Data
+          id: create-release
+          uses: actions/github-script@v6
+          with:
+            result-encoding: string
+            script: |
+              const {
+                version
+              } = await (require("./index.js")());
+  
+              return version;
+          env:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            
+    publish_tauri:
+      name: Build the Tauri App
+      needs: create_release
+      runs-on: windows-latest
+
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Setup Node
+          uses: actions/setup-node@v3
+            
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v2
+            
+        - name: Install Rust
+          uses: dtolnay/rust-toolchain@stable
+
+        - name: Install Deps
+          run: pnpm install
+          working-directory: tauri
+
+        - name: Build Tauri App
+          uses: tauri-apps/tauri-action@v0
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            releaseId: ${{ needs.create_release.outputs.release_id }}
+
+        - name: Release Zip Asset
+          run: node upload.cjs
+          working-directory: tauri
+          env:
+            releaseid: ${{ needs.create_release.outputs.release_id }}
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+    publish_electron:
+      name: Build the Electron App
+      needs: create_release
+      runs-on: windows-latest
+      
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        
+        - name: Setup Node
+          uses: actions/setup-node@v3
+
+        - name: Setup PNPM
+          uses: pnpm/action-setup@v2
+
+        - name: Install Deps
+          run: pnpm install
+          working-directory: electron
+
+        - name: Build
+          run: pnpm build
+          working-directory: electron
+
+        - name: Get & Release Assets
+          run: node upload.cjs
+          working-directory: electron
+          env:
+            releaseid: ${{ needs.create_release.outputs.release_id }}
+            token: ${{ secrets.GITHUB_TOKEN }}

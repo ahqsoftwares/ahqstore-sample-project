@@ -1,4 +1,1 @@
-/.github
-/ahqstore.json
-/electron
-/tauri
+node_modules

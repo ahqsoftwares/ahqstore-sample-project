@@ -1,0 +1,33 @@
+{
+  "name": "ahqstore-sample-project",
+  "version": "1.0.0",
+  "description": "This repo is an example repo showing **AHQ Store** bundle codebases for\r - Electron\r - Tauri",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahqsoftwares/astore-sample-project.git"
+  },
+  "keywords": [
+    "sample",
+    "project",
+    "ahqstore",
+    "open",
+    "sourced",
+    "electron",
+    "tauri",
+    "cross",
+    "compilcation"
+  ],
+  "author": "AHQ Store Devs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahqsoftwares/astore-sample-project/issues"
+  },
+  "homepage": "https://github.com/ahqsoftwares/astore-sample-project#readme",
+  "dependencies": {
+    "octokit": "^2.1.0"
+  }
+}

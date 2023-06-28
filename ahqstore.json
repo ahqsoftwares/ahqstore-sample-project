@@ -1,0 +1,24 @@
+{
+    "apps": [
+        {
+            "name": "Test Electron App",
+            "zip_ends_with": "-win.zip",
+            "exec": "electron.exe",
+            "metadata": {
+                "description": "A Test Electron App",
+                "icon": ""
+            },
+            "uid": ""
+        },
+        {
+            "name": "Test Tauri App",
+            "zip_ends_with": "-tauri-windows.zip",
+            "exec": "ahq-store-sample-app.exe",
+            "metadata": {
+                "description": "A Test Tauri App",
+                "icon": ""
+            },
+            "uid": ""
+        }
+    ]
+}
