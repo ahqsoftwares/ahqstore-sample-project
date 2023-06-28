@@ -37500,10 +37500,10 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const fs = __nccwpck_require__(7147);
-const { Octokit } = __nccwpck_require__(9566);
 
-(async() => {
+  const fs = __nccwpck_require__(7147);
+  const { Octokit } = __nccwpck_require__(9566);
+
   const github = new Octokit({
     auth: process.env.token,
   });
@@ -37523,17 +37523,18 @@ const { Octokit } = __nccwpck_require__(9566);
       data: fs.readFileSync(`./dist/${fileName}`),
       headers: {
         "Content-Type": fileName.endsWith(".zip") ? "application/zip" : "application/octet-stream",
+        "Content-Length": fs.statSync(`./dist/${fileName}`).size
       }
     });
   }
 
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
+
     if (file.endsWith(".zip") || file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".appImage") || file.endsWith(".AppImage") || file.endsWith(".appimage") || file.endsWith(".deb")) {
       publish(file)
     }
   }
-})();
 
 })();
 

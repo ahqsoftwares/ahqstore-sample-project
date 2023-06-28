@@ -25,6 +25,7 @@ module.exports = (async () => {
     data: fs.readFileSync("./app.zip"),
     headers: {
       "Content-Type": "application/zip",
+      "Content-Length": fs.statSync("./app.zip").size,
     }
   });
 })();

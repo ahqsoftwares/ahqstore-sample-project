@@ -38781,43 +38781,6 @@ try {
 
 /***/ }),
 
-/***/ 1833:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
-
-const AdmZip = __nccwpck_require__(6598);
-const fs = __nccwpck_require__(7147);
-const { Octokit } = __nccwpck_require__(9566);
-
-module.exports = (async () => {
-  const zip = new AdmZip();
-
-  zip.addLocalFile("./src-tauri/target/release/ahq-store-sample-app.exe");
-
-  zip.writeZip("./app.zip");
-
-  const github = new Octokit({
-    auth: process.env.token,
-  });
-
-  const base = {
-    owner: "ahqsoftwares",
-    repo: "alang",
-    release_id: process.env.releaseid
-  };
-
-  await github.rest.repos.uploadReleaseAsset({
-    ...base,
-    name: "sample_app-tauri-windows.zip",
-    data: fs.readFileSync("./app.zip"),
-    headers: {
-      "Content-Type": "application/zip",
-    }
-  });
-})();
-
-
-/***/ }),
-
 /***/ 326:
 /***/ ((module) => {
 
@@ -40332,6 +40295,44 @@ exports.LRUCache = LRUCache;
 
 /***/ }),
 
+/***/ 9913:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+const AdmZip = __nccwpck_require__(6598);
+const fs = __nccwpck_require__(7147);
+const { Octokit } = __nccwpck_require__(9566);
+
+module.exports = (async () => {
+  const zip = new AdmZip();
+
+  zip.addLocalFile("./src-tauri/target/release/ahq-store-sample-app.exe");
+
+  zip.writeZip("./app.zip");
+
+  const github = new Octokit({
+    auth: process.env.token,
+  });
+
+  const base = {
+    owner: "ahqsoftwares",
+    repo: "alang",
+    release_id: process.env.releaseid
+  };
+
+  await github.rest.repos.uploadReleaseAsset({
+    ...base,
+    name: "sample_app-tauri-windows.zip",
+    data: fs.readFileSync("./app.zip"),
+    headers: {
+      "Content-Type": "application/zip",
+      "Content-Length": fs.statSync("./app.zip").size,
+    }
+  });
+})();
+
+
+/***/ }),
+
 /***/ 1229:
 /***/ ((module) => {
 
@@ -40394,7 +40395,7 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __nccwpck_require__(1833);
+/******/ 	var __webpack_exports__ = __nccwpck_require__(9913);
 /******/ 	module.exports = __webpack_exports__;
 /******/ 	
 /******/ })()
