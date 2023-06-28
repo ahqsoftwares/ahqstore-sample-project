@@ -35941,46 +35941,6 @@ try {
 
 /***/ }),
 
-/***/ 1833:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
-
-const fs = __nccwpck_require__(7147);
-const { Octokit } = __nccwpck_require__(9566);
-
-module.exports = (async () => {
-  const github = new Octokit({
-    auth: process.env.token,
-  });
-
-  const base = {
-    owner: "ahqsoftwares",
-    repo: "alang",
-    release_id: process.env.releaseid
-  };
-
-  const files = fs.readdirSync("./dist");
-
-  async function publish(fileName) {
-    await github.rest.repos.uploadReleaseAsset({
-      ...base,
-      name: fileName,
-      data: fs.readFileSync(`./dist/${fileName}`),
-      headers: {
-        "Content-Type": fileName.endsWith(".zip") ? "application/zip" : "application/octet-stream",
-      }
-    });
-  }
-
-  for (const file in files) {
-    if (file.endsWith(".zip") || file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".appImage") || file.endsWith(".AppImage") || file.endsWith(".appimage") || file.endsWith(".deb")) {
-      publish(file)
-    }
-  }
-})();
-
-
-/***/ }),
-
 /***/ 326:
 /***/ ((module) => {
 
@@ -37537,12 +37497,46 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __nccwpck_require__(1833);
-/******/ 	module.exports = __webpack_exports__;
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+const fs = __nccwpck_require__(7147);
+const { Octokit } = __nccwpck_require__(9566);
+
+(async() => {
+  const github = new Octokit({
+    auth: process.env.token,
+  });
+
+  const base = {
+    owner: "ahqsoftwares",
+    repo: "alang",
+    release_id: process.env.releaseid
+  };
+
+  const files = fs.readdirSync("./dist");
+
+  async function publish(fileName) {
+    await github.rest.repos.uploadReleaseAsset({
+      ...base,
+      name: fileName,
+      data: fs.readFileSync(`./dist/${fileName}`),
+      headers: {
+        "Content-Type": fileName.endsWith(".zip") ? "application/zip" : "application/octet-stream",
+      }
+    });
+  }
+
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    if (file.endsWith(".zip") || file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".appImage") || file.endsWith(".AppImage") || file.endsWith(".appimage") || file.endsWith(".deb")) {
+      publish(file)
+    }
+  }
+})();
+
+})();
+
+module.exports = __webpack_exports__;
 /******/ })()
 ;

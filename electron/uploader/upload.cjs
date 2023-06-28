@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { Octokit } = require("octokit");
 
-module.exports = (async () => {
+(async() => {
   const github = new Octokit({
     auth: process.env.token,
   });
@@ -25,7 +25,8 @@ module.exports = (async () => {
     });
   }
 
-  for (const file in files) {
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
     if (file.endsWith(".zip") || file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".appImage") || file.endsWith(".AppImage") || file.endsWith(".appimage") || file.endsWith(".deb")) {
       publish(file)
     }
