@@ -20,6 +20,8 @@ jobs:
 
         - name: Setup PNPM
           uses: pnpm/action-setup@v2
+          with:
+            version: latest
 
         - name: Install Dependencies
           run: pnpm install
@@ -52,6 +54,8 @@ jobs:
             
         - name: Setup PNPM
           uses: pnpm/action-setup@v2
+          with:
+            version: latest
             
         - name: Install Rust
           uses: dtolnay/rust-toolchain@stable
@@ -88,6 +92,8 @@ jobs:
 
         - name: Setup PNPM
           uses: pnpm/action-setup@v2
+          with:
+            version: latest
 
         - name: Install Deps
           run: pnpm install
