@@ -4,7 +4,7 @@
   "main": "main.cjs",
   "description": "AHQ Store Electron Project",
   "author": "AHQ Store Developers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,6 +20,12 @@
         "nsis",
         "zip"
       ]
+    },
+    "linux": {
+      "target": ["deb", "apk", "zip"]
+    },
+    "macos": {
+      "target": ["dmg", "zip"]
     }
   },
   "dependencies": {
