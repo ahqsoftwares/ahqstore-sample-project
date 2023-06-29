@@ -6,6 +6,7 @@
   "author": "AHQ Store Developers",
   "version": "1.0.3",
   "type": "module",
+  "homepage": "https://ahq-store.ml",
   "scripts": {
     "dev": "vite",
     "start": "electron .",
