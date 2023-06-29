@@ -20,6 +20,12 @@
         "nsis",
         "zip"
       ]
+    },
+    "linux": {
+      "target": ["deb", "apk", "zip"]
+    },
+    "macos": {
+      "target": ["dmg", "zip"]
     }
   },
   "dependencies": {
