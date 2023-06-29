@@ -78,6 +78,7 @@ jobs:
 
         - name: Release Zip Asset
           run: node upload.cjs
+          if: matrix.os == Windows-Latest
           working-directory: tauri
           env:
             releaseid: ${{ needs.create_release.outputs.release_id }}
