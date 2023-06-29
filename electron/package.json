@@ -23,6 +23,7 @@
       ]
     },
     "linux": {
+      "maintainer": "AHQ",
       "target": ["deb", "apk", "zip"]
     },
     "mac": {
