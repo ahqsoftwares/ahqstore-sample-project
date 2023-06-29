@@ -24,7 +24,7 @@
     "linux": {
       "target": ["deb", "apk", "zip"]
     },
-    "macos": {
+    "mac": {
       "target": ["dmg", "zip"]
     }
   },
