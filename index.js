@@ -7,15 +7,12 @@ module.exports = (async function () {
     auth: process.env.token,
   });
 
-  const release = await client.request("POST /repos/{owner}/{repo}/releases", {
-    owner: "ahqsoftwares",
-    repo: "ahqstore-sample-project",
+  const release = await client.rest.repos.createRelease({
+    owner: "ahqstore",
+    repo: "sample-app",
     tag_name: `v${version}`,
-    name: `AHQ Store Sample Project v${version}`,
+    name: `AHQ Store Sample App v${version}`,
     draft: true,
-    headers: {
-      "X-GitHub-Api-Version": "2022-11-28",
-    },
   });
 
   return release.data.id;
