@@ -30,7 +30,7 @@ jobs:
 
       - name: Get Release Data
         id: create-release
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           result-encoding: string
           script: |
