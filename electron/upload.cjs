@@ -37509,8 +37509,8 @@ var __webpack_exports__ = {};
   });
 
   const base = {
-    owner: "ahqsoftwares",
-    repo: "ahqstore-sample-project",
+    owner: "ahqstore",
+    repo: "sample-app",
     release_id: process.env.releaseid
   };
 
