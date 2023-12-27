@@ -1,0 +1,12 @@
+{
+  "win32Platform": "WindowsZip",
+  "linuxPlatform": "LinuxAppImage",
+  "win32Options": {
+    "deps": [],
+    "zip_file_exec": null,
+    "exe_installer_args": []
+  },
+  "linuxOptions": {
+    "deps": []
+  }
+}

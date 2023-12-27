@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/ahqsoftwares/astore-sample-project#readme",
   "dependencies": {
-    "octokit": "^2.1.0"
+    "octokit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@ahqstore/cli": "^0.1.0"
   }
 }

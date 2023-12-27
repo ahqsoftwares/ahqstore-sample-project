@@ -1,0 +1,31 @@
+{
+  "U4StnJPm5ssnwpDZHZn4": {
+    "appId": "U4StnJPm5ssnwpDZHZn4",
+    "appShortcutName": "Electron (Sample Application)",
+    "appDisplayName": "Test Electron App",
+    "authorId": "1",
+    "description": "",
+    "repo": {
+      "author": "ahqstore",
+      "repo": "sample-app"
+    },
+    "platform": {
+      "win32Platform": "WindowsZip",
+      "linuxPlatform": null,
+      "win32Options": {
+        "deps": [],
+        "zip_file_exec": "electron.exe",
+        "exe_installer_args": []
+      },
+      "linuxOptions": {
+        "deps": []
+      }
+    },
+    "finder": {
+      "windowsFinder": {
+        "endsWith": "-win.zip"
+      },
+      "linuxFinder": null
+    }
+  }
+}

@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "ahq-store-sample-app",
-    "version": "0.0.0"
+    "productName": "Sample App (Tauri)",
+    "version": "../package.json"
   },
   "tauri": {
     "allowlist": {
@@ -37,7 +37,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "ahq-store-sample-app",
+        "title": "AHQ Store Sample Application",
         "width": 800,
         "height": 600
       }
