@@ -6,6 +6,7 @@
   "author": "AHQ Store Developers",
   "version": "1.0.5",
   "type": "module",
+  "homepage": "https://ahq-store.ml",
   "scripts": {
     "dev": "vite",
     "start": "electron .",
@@ -22,11 +23,11 @@
       ]
     },
     "linux": {
-      "target": [
-        "deb",
-        "AppImage",
-        "zip"
-      ]
+      "maintainer": "AHQ",
+      "target": ["deb", "apk", "zip"]
+    },
+    "mac": {
+      "target": ["dmg", "zip"]
     }
   },
   "dependencies": {

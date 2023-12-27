@@ -1,6 +1,6 @@
 {
   "name": "ahqstore-sample-project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This repo is an example repo showing **AHQ Store** bundle codebases for\r - Electron\r - Tauri",
   "main": "index.js",
   "scripts": {
