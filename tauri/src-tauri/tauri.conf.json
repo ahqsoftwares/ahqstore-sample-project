@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "Sample App (Tauri)",
+    "productName": "Sample Tauri App",
     "version": "../package.json"
   },
   "tauri": {

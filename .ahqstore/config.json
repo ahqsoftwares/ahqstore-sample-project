@@ -27,5 +27,34 @@
       },
       "linuxFinder": null
     }
+  },
+  "jIvEpRUUzlqFWC2Wb404": {
+    "appId": "jIvEpRUUzlqFWC2Wb404",
+    "appShortcutName": "Tauri (Sample Application)",
+    "appDisplayName": "Test Tauri App",
+    "authorId": "1",
+    "description": "A Test Tauri Application",
+    "repo": {
+      "author": "ahqstore",
+      "repo": "sample-app"
+    },
+    "platform": {
+      "win32Platform": "WindowsZip",
+      "linuxPlatform": null,
+      "win32Options": {
+        "deps": [],
+        "zip_file_exec": "ahq-store-sample-app.exe",
+        "exe_installer_args": []
+      },
+      "linuxOptions": {
+        "deps": []
+      }
+    },
+    "finder": {
+      "windowsFinder": {
+        "endsWith": "-tauri-windows.zip"
+      },
+      "linuxFinder": null
+    }
   }
 }
