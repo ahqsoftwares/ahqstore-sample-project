@@ -6,6 +6,8 @@ on:
     branches:
       - main
 
+permissions: write-all
+
 jobs:
   create_release:
     name: Create a Release
@@ -127,6 +129,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   post_builders:
+    name: Release to GitHub Releases
+
     needs: [create_release, publish_electron, publish_tauri]
 
     runs-on: ubuntu-latest
@@ -139,7 +143,16 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Install CLI
-        run: npm i -g @ahqstore/cli
+        run: npm install; npm i -g @ahqstore/cli
+
+      - name: Release App
+        uses: actions/github-script@v7
+        env:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release_id: ${{ needs.create_release.outputs.release_id }}
+        with:
+          script: |
+            await require("./index.js").release();
 
       - name: Build .ahqstore (Electron)
         run: ahqstore build
@@ -156,12 +169,3 @@ jobs:
           RELEASE_ID: ${{ needs.create_release.outputs.release_id }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-
-      - name: Release App
-        uses: actions/github-script@v7
-        env:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release_id: ${{ needs.create_release.outputs.release_id }}
-        with:
-          script: |
-            await require("./index.js").release();
