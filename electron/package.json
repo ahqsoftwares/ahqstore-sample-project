@@ -4,9 +4,9 @@
   "main": "main.cjs",
   "description": "AHQ Store Electron Project",
   "author": "AHQ Store Developers",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "type": "module",
-  "homepage": "https://ahq-store.ml",
+  "homepage": "https://ahq-store.web.app",
   "scripts": {
     "dev": "vite",
     "start": "electron .",

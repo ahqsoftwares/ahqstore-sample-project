@@ -4,14 +4,14 @@
     "appShortcutName": "Electron (Sample Application)",
     "appDisplayName": "Test Electron App",
     "authorId": "1",
-    "description": "",
+    "description": "A Test Electron Application",
     "repo": {
       "author": "ahqstore",
       "repo": "sample-app"
     },
     "platform": {
       "win32Platform": "WindowsZip",
-      "linuxPlatform": null,
+      "linuxPlatform": "LinuxAppImage",
       "win32Options": {
         "deps": [],
         "zip_file_exec": "electron.exe",
@@ -23,9 +23,13 @@
     },
     "finder": {
       "windowsFinder": {
+        "startsWith": "electron",
         "endsWith": "-win.zip"
       },
-      "linuxFinder": null
+      "linuxFinder": {
+        "startsWith": "electron-",
+        "endsWith": ".AppImage"
+      }
     }
   },
   "jIvEpRUUzlqFWC2Wb404": {
@@ -40,7 +44,7 @@
     },
     "platform": {
       "win32Platform": "WindowsZip",
-      "linuxPlatform": null,
+      "linuxPlatform": "LinuxAppImage",
       "win32Options": {
         "deps": [],
         "zip_file_exec": "ahq-store-sample-app.exe",
@@ -54,7 +58,10 @@
       "windowsFinder": {
         "endsWith": "-tauri-windows.zip"
       },
-      "linuxFinder": null
+      "linuxFinder": {
+        "startsWith": "sample-tauri-app",
+        "endsWith": ".AppImage"
+      }
     }
   }
 }
