@@ -139,11 +139,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
+      - name: Setup Rust
+        run: rustup toolchain install stable
 
       - name: Install CLI
-        run: npm install; npm i -g @ahqstore/cli
+        run: cargo install ahqstore_cli_rs
 
       - name: Release App
         uses: actions/github-script@v7
