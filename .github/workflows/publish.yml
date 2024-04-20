@@ -161,7 +161,7 @@ jobs:
             await require("./index.js").release();
 
       - name: Build .ahqstore (Electron)
-        run: ahqstore build
+        run: ahqstore upload
         env:
           APP_ID: U4StnJPm5ssnwpDZHZn4
           RELEASE_ID: ${{ needs.create_release.outputs.release_id }}
@@ -169,7 +169,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Build .ahqstore (Tauri)
-        run: ahqstore build
+        run: ahqstore upload
         env:
           APP_ID: jIvEpRUUzlqFWC2Wb404
           RELEASE_ID: ${{ needs.create_release.outputs.release_id }}

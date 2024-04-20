@@ -1,6 +1,6 @@
 [package]
 name = "ahq-store-sample-app"
-version = "1.2.2"
+version = "1.2.3"
 description = "A Tauri App"
 authors = ["AHQ Store Developers"]
 license = ""
