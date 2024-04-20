@@ -54,7 +54,7 @@
     },
     "finder": {
       "windowsFinder": {
-        "contains": "tauri",
+        "contains": "Tauri",
         "endsWith": ".msi"
       },
       "linuxFinder": {
