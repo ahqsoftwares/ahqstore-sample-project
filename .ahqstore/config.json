@@ -10,6 +10,7 @@
       "repo": "sample-app"
     },
     "platform": {
+      "installType": "Both",
       "win32Platform": "WindowsZip",
       "linuxPlatform": "LinuxAppImage",
       "win32Options": {
@@ -17,9 +18,7 @@
         "zip_file_exec": "electron.exe",
         "exe_installer_args": []
       },
-      "linuxOptions": {
-        "deps": []
-      }
+      "linuxOptions": {}
     },
     "finder": {
       "windowsFinder": {
@@ -43,20 +42,20 @@
       "repo": "sample-app"
     },
     "platform": {
-      "win32Platform": "WindowsZip",
+      "installType": "Both",
+      "win32Platform": "WindowsInstallerMsi",
       "linuxPlatform": "LinuxAppImage",
       "win32Options": {
         "deps": [],
-        "zip_file_exec": "ahq-store-sample-app.exe",
+        "zip_file_exec": "",
         "exe_installer_args": []
       },
-      "linuxOptions": {
-        "deps": []
-      }
+      "linuxOptions": {}
     },
     "finder": {
       "windowsFinder": {
-        "endsWith": "-tauri-windows.zip"
+        "contains": "tauri",
+        "endsWith": ".msi"
       },
       "linuxFinder": {
         "startsWith": "sample-tauri-app",

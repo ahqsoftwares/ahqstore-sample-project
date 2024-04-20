@@ -4,7 +4,7 @@
   "main": "main.cjs",
   "description": "AHQ Store Electron Project",
   "author": "AHQ Store Developers",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "homepage": "https://ahq-store.web.app",
   "scripts": {
