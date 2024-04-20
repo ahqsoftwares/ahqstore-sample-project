@@ -139,6 +139,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+
+      - name: Install npm deps
+        run: npm install
+
       - name: Setup Rust
         run: rustup toolchain install stable
 
