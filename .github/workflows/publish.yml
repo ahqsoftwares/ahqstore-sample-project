@@ -36,7 +36,7 @@ jobs:
         with:
           result-encoding: string
           script: |
-            const version = await (await import("./index.mjs"))();
+            const version = await (await import("../../../../../sample-app/sample-app/index.mjs"))();
             console.log(`Version: ${version}`);
 
             return version;
@@ -158,7 +158,7 @@ jobs:
           release_id: ${{ needs.create_release.outputs.release_id }}
         with:
           script: |
-            await (await import("./index.mjs")).release();
+            await (await import("../../../../../sample-app/sample-app/index.mjs")).release();
 
       - name: Build .ahqstore (Electron)
         run: ahqstore upload
