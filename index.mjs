@@ -1,6 +1,6 @@
-module.exports = async function () {
-  const { Octokit } = require("octokit");
+import { Octokit } from "octokit";
 
+export default async function () {
   const { version } = require("./tauri/package.json");
 
   const client = new Octokit({
@@ -16,11 +16,9 @@ module.exports = async function () {
   });
 
   return release.data.id;
-};
+}
 
-module.exports.release = async function () {
-  const { Octokit } = require("octokit");
-
+export async function release() {
   const client = new Octokit({
     auth: process.env.token,
   });
@@ -31,4 +29,4 @@ module.exports.release = async function () {
     release_id: process.env.release_id,
     draft: false,
   });
-};
+}
