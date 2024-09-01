@@ -1,8 +1,8 @@
 import { Octokit } from "octokit";
 
-export default async function () {
-  const { version } = require("./tauri/package.json");
+import { version } from "./tauri/package.json";
 
+export default async function () {
   const client = new Octokit({
     auth: process.env.token,
   });
