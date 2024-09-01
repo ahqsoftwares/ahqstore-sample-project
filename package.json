@@ -31,6 +31,6 @@
     "octokit": "^4.0.2"
   },
   "devDependencies": {
-    "@ahqstore/cli": "^0.5.2"
+    "@ahqstore/cli": "^0.5.4"
   }
 }

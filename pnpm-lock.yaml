@@ -13,60 +13,60 @@ importers:
         version: 4.0.2
     devDependencies:
       '@ahqstore/cli':
-        specifier: ^0.5.2
-        version: 0.5.2
+        specifier: ^0.5.4
+        version: 0.5.4
 
 packages:
 
-  '@ahqstore/cli-darwin-arm64@0.5.2':
-    resolution: {integrity: sha512-K8oap9zNkDRai5l4rJdDCoAJrqTtm3zG2VCvBK+csq+pMYV2L1MFKabWcP9jJ7FgTLT1P7XR5alxQaLR0uoZ+g==}
+  '@ahqstore/cli-darwin-arm64@0.5.4':
+    resolution: {integrity: sha512-qbwwyJD5VpMWxH6QSp67O8LPRN0F8ABXVeVw5U9ia1IKvwdriA62mSlXQ68K2pwS7ve6vkhpkU52v5kbaPn2Ow==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@ahqstore/cli-darwin-universal@0.5.2':
-    resolution: {integrity: sha512-YnCF+eKZxNEryd3LDXTxS7P0F0yY7dDZ2/nft+tmpJcLVqKFJ0alhSDJ0V5DriUfqxVAbx3aJZSQDpJD8veQDA==}
+  '@ahqstore/cli-darwin-universal@0.5.4':
+    resolution: {integrity: sha512-oKzZO5ZuDRN561SMvBZUdW7yqAQ23zvyn5Nw+ASXhYAI5Idvtj2A6ddUhoIEKQMPGQvh1ANysA3JUZzxvmR0xg==}
     engines: {node: '>= 10'}
     os: [darwin]
 
-  '@ahqstore/cli-darwin-x64@0.5.2':
-    resolution: {integrity: sha512-wR16VdAFc+iiJjPPW26whm/67F3YO47UsMmDTFoV907SlOOvWaS5+AsDqCkIF5mgeIiBuZ9B1Gt0S/fipExvag==}
+  '@ahqstore/cli-darwin-x64@0.5.4':
+    resolution: {integrity: sha512-qD8uTBAYajKJYdR+AVAZsgiK5IUEBRjCiI86ixyYMPHtDGcnEigwhIYSsgo/q7zHTWJMAHw+T3IvU2fhaICZog==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@ahqstore/cli-linux-arm64-gnu@0.5.2':
-    resolution: {integrity: sha512-7ZGiYr1AH7+5zWQ+Lo7ZvDo/22MytT1KNr3kpaAHih5YK/Fg+2fug55A7ymOiJy2ZHD5XXIOTVGW76BuVUKRAg==}
+  '@ahqstore/cli-linux-arm64-gnu@0.5.4':
+    resolution: {integrity: sha512-qUC20ZkeEKe8dsbR8gdjtJ/iPWqZKf68z+0NSwa5GQb+lFfqg1lmlSf7SGLzIxK6R41/aTX8MuWwApc76eihyg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@ahqstore/cli-linux-x64-gnu@0.5.2':
-    resolution: {integrity: sha512-2zpbkDHEnw/YSIGhUP53aj05lBbqvwX429FL6ZZ49RvBNwh2QA6YKlHpV1uIP6RQvyqAL4syItXdEtyxcsKk5w==}
+  '@ahqstore/cli-linux-x64-gnu@0.5.4':
+    resolution: {integrity: sha512-R+FNw1zBWfUQkIVUcgItRSk6QquZ8aYd5SWhXKp4/G91xa6NP1JqgzkprLp77/uToBbPykp2sv4j/dGiXu9/2Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@ahqstore/cli-win32-arm64-msvc@0.5.2':
-    resolution: {integrity: sha512-eAqFEyE08zZpARqG8hBEFrdPA8Fc5Fh+MxN/i2bhZugDy/FiXM1daXyphMN/aYHcY6NYb3Y/Q6i++er7s9hNRg==}
+  '@ahqstore/cli-win32-arm64-msvc@0.5.4':
+    resolution: {integrity: sha512-ikPT4462BXXqJHZQSfy0ayFXkepfSG9aX25fE39LYj+fCPHfEQI3i0g8dB5TM/MEwF38++Szowp1xh7K43j2KA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@ahqstore/cli-win32-ia32-msvc@0.5.2':
-    resolution: {integrity: sha512-NBcOdXVPPlSu4kw+dsQh6jwKnOmp/KTB0xmafqlNzBFIUFlyBPsRGZGtGB+Xvk5zR3R/9n30WICFfvpXHull5g==}
+  '@ahqstore/cli-win32-ia32-msvc@0.5.4':
+    resolution: {integrity: sha512-t5q7ydLYuVdKBaRR21xOYzV1rXBKyU1exwgHBUpJVuS9CY9SE64dBoHRADTiyhcTjBvWzcD2h8ccH7ZwhslmeQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@ahqstore/cli-win32-x64-msvc@0.5.2':
-    resolution: {integrity: sha512-j5zN3BR6H5xeMwxKKJF8sHrvgzPBBAEjT+f+xG2+Su73hb9ZQsaneKjiQ/9LQFKAieyUnIuST07y2wPYQWVwDQ==}
+  '@ahqstore/cli-win32-x64-msvc@0.5.4':
+    resolution: {integrity: sha512-qtc58pPSXnkx196B9a0pmaKaTo2KRcJ16ydcQ4cPEU5ns/I+iviHJLOaYlrxuABOcH99L5PBmDSkzzirlOvdTw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@ahqstore/cli@0.5.2':
-    resolution: {integrity: sha512-H6PFHB6O3cLGt0h6dhCvpUXveXL2P6J4+qjG4k64JmZAlSdO/Q4LijOzwo/l7RhiR80SgbTXiyQyQiL+lypU+w==}
+  '@ahqstore/cli@0.5.4':
+    resolution: {integrity: sha512-zrsaJhrH6Duuy7HeIuQnd3K7Vig4f5FKpsrV1fNqLA3Ed+LkLFAV6DHrYMTNj9DEoO4Mqda7B3RFOQZbXZnPFA==}
     engines: {node: '>= 10'}
     hasBin: true
 
@@ -201,40 +201,40 @@ packages:
 
 snapshots:
 
-  '@ahqstore/cli-darwin-arm64@0.5.2':
+  '@ahqstore/cli-darwin-arm64@0.5.4':
     optional: true
 
-  '@ahqstore/cli-darwin-universal@0.5.2':
+  '@ahqstore/cli-darwin-universal@0.5.4':
     optional: true
 
-  '@ahqstore/cli-darwin-x64@0.5.2':
+  '@ahqstore/cli-darwin-x64@0.5.4':
     optional: true
 
-  '@ahqstore/cli-linux-arm64-gnu@0.5.2':
+  '@ahqstore/cli-linux-arm64-gnu@0.5.4':
     optional: true
 
-  '@ahqstore/cli-linux-x64-gnu@0.5.2':
+  '@ahqstore/cli-linux-x64-gnu@0.5.4':
     optional: true
 
-  '@ahqstore/cli-win32-arm64-msvc@0.5.2':
+  '@ahqstore/cli-win32-arm64-msvc@0.5.4':
     optional: true
 
-  '@ahqstore/cli-win32-ia32-msvc@0.5.2':
+  '@ahqstore/cli-win32-ia32-msvc@0.5.4':
     optional: true
 
-  '@ahqstore/cli-win32-x64-msvc@0.5.2':
+  '@ahqstore/cli-win32-x64-msvc@0.5.4':
     optional: true
 
-  '@ahqstore/cli@0.5.2':
+  '@ahqstore/cli@0.5.4':
     optionalDependencies:
-      '@ahqstore/cli-darwin-arm64': 0.5.2
-      '@ahqstore/cli-darwin-universal': 0.5.2
-      '@ahqstore/cli-darwin-x64': 0.5.2
-      '@ahqstore/cli-linux-arm64-gnu': 0.5.2
-      '@ahqstore/cli-linux-x64-gnu': 0.5.2
-      '@ahqstore/cli-win32-arm64-msvc': 0.5.2
-      '@ahqstore/cli-win32-ia32-msvc': 0.5.2
-      '@ahqstore/cli-win32-x64-msvc': 0.5.2
+      '@ahqstore/cli-darwin-arm64': 0.5.4
+      '@ahqstore/cli-darwin-universal': 0.5.4
+      '@ahqstore/cli-darwin-x64': 0.5.4
+      '@ahqstore/cli-linux-arm64-gnu': 0.5.4
+      '@ahqstore/cli-linux-x64-gnu': 0.5.4
+      '@ahqstore/cli-win32-arm64-msvc': 0.5.4
+      '@ahqstore/cli-win32-ia32-msvc': 0.5.4
+      '@ahqstore/cli-win32-x64-msvc': 0.5.4
 
   '@octokit/app@15.1.0':
     dependencies:
