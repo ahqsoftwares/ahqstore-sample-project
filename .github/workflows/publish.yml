@@ -36,7 +36,7 @@ jobs:
         with:
           result-encoding: string
           script: |
-            const version = await (await import("../../../../../sample-app/sample-app/index.mjs"))();
+            const version = await (await import("../../../../../sample-app/sample-app/index.mjs")).default();
             console.log(`Version: ${version}`);
 
             return version;
