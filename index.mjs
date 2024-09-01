@@ -1,6 +1,10 @@
 import { Octokit } from "octokit";
+import { join } from "path";
+import { readFileSync } from "fs";
 
-import { version } from "./tauri/package.json";
+const data = readFileSync(join(__dirname, "tauri", "package.json")).toString();
+
+const { version } = JSON.parse(data);
 
 export default async function () {
   const client = new Octokit({
