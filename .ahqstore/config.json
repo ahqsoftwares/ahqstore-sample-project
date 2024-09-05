@@ -21,11 +21,11 @@
       "linuxOptions": {}
     },
     "finder": {
-      "windowsFinder": {
+      "windowsAmd64Finder": {
         "startsWith": "electron",
         "endsWith": "-win.zip"
       },
-      "linuxFinder": {
+      "linuxAmd64Finder": {
         "startsWith": "electron-",
         "endsWith": ".AppImage"
       }
@@ -53,11 +53,11 @@
       "linuxOptions": {}
     },
     "finder": {
-      "windowsFinder": {
+      "windowsAmd64Finder": {
         "contains": "Tauri",
         "endsWith": ".msi"
       },
-      "linuxFinder": {
+      "linuxAmd64Finder": {
         "startsWith": "sample-tauri-app",
         "endsWith": ".AppImage"
       }
