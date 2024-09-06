@@ -10,9 +10,9 @@
       "repo": "sample-app"
     },
     "platform": {
-      "winAmd64Platform": null,
+      "winAmd64Platform": "WindowsZip",
       "winArm64Platform": null,
-      "linuxAmd64Platform": null,
+      "linuxAmd64Platform": "LinuxAppImage",
       "linuxArm64Platform": null,
       "linuxArm32Platform": null,
       "androidUniversal": null,
@@ -27,7 +27,7 @@
     },
     "finder": {
       "windowsAmd64Finder": {
-        "startsWith": "electron",
+        "startsWith": "electron-",
         "endsWith": "-win.zip"
       },
       "windowsArm64Finder": null,
@@ -72,7 +72,7 @@
     },
     "finder": {
       "windowsAmd64Finder": {
-        "startsWith": "Tauri",
+        "startsWith": "Sample.Tauri",
         "endsWith": ".msi"
       },
       "windowsArm64Finder": null,
