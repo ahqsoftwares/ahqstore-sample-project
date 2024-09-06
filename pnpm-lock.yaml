@@ -13,60 +13,60 @@ importers:
         version: 4.0.2
     devDependencies:
       '@ahqstore/cli':
-        specifier: ^0.5.4
-        version: 0.5.4
+        specifier: ^0.6.0
+        version: 0.6.0
 
 packages:
 
-  '@ahqstore/cli-darwin-arm64@0.5.4':
-    resolution: {integrity: sha512-qbwwyJD5VpMWxH6QSp67O8LPRN0F8ABXVeVw5U9ia1IKvwdriA62mSlXQ68K2pwS7ve6vkhpkU52v5kbaPn2Ow==}
+  '@ahqstore/cli-darwin-arm64@0.6.0':
+    resolution: {integrity: sha512-ZnuNZLjld8EMzkCdiI7i0Mkneu4nd7/q8cWZjuOPXjtb3YEathDuXsLg8RjhrTKd9d3ggBUAu7zUC6GpOodP5A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@ahqstore/cli-darwin-universal@0.5.4':
-    resolution: {integrity: sha512-oKzZO5ZuDRN561SMvBZUdW7yqAQ23zvyn5Nw+ASXhYAI5Idvtj2A6ddUhoIEKQMPGQvh1ANysA3JUZzxvmR0xg==}
+  '@ahqstore/cli-darwin-universal@0.6.0':
+    resolution: {integrity: sha512-sgHtfC8ejfiMRuidxDkmm5DLZr0qel/fcbmI0Hdh3h70sGhJ/cIFLWiG4/D5WVAYUkVXUtaNFLT/7PDlWEJp7w==}
     engines: {node: '>= 10'}
     os: [darwin]
 
-  '@ahqstore/cli-darwin-x64@0.5.4':
-    resolution: {integrity: sha512-qD8uTBAYajKJYdR+AVAZsgiK5IUEBRjCiI86ixyYMPHtDGcnEigwhIYSsgo/q7zHTWJMAHw+T3IvU2fhaICZog==}
+  '@ahqstore/cli-darwin-x64@0.6.0':
+    resolution: {integrity: sha512-wZSFDoURBccLRUpNJCzOJZkZpmlVhNSx6PWmosrTYEKzjdIHgrkWkvPvXPbhbxcTRxfIXfVXhOFzcRZdSoowPQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@ahqstore/cli-linux-arm64-gnu@0.5.4':
-    resolution: {integrity: sha512-qUC20ZkeEKe8dsbR8gdjtJ/iPWqZKf68z+0NSwa5GQb+lFfqg1lmlSf7SGLzIxK6R41/aTX8MuWwApc76eihyg==}
+  '@ahqstore/cli-linux-arm64-gnu@0.6.0':
+    resolution: {integrity: sha512-II1kOA8LXbq/0Dai5g/UtWYbe8ayf7Sd0hoYoCT42VxsoahcGASwQDStSLcwyu7xLFTuFmNkLGZ9lB8oPKw6ag==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@ahqstore/cli-linux-x64-gnu@0.5.4':
-    resolution: {integrity: sha512-R+FNw1zBWfUQkIVUcgItRSk6QquZ8aYd5SWhXKp4/G91xa6NP1JqgzkprLp77/uToBbPykp2sv4j/dGiXu9/2Q==}
+  '@ahqstore/cli-linux-x64-gnu@0.6.0':
+    resolution: {integrity: sha512-eYXWwc3Z357DBaAxZo1S1JNSNXzrknsgXdONgKjA2Hc83VAvJzIhxVjWseC9DPcgmcsvZgh33tj5C30Atfwvag==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@ahqstore/cli-win32-arm64-msvc@0.5.4':
-    resolution: {integrity: sha512-ikPT4462BXXqJHZQSfy0ayFXkepfSG9aX25fE39LYj+fCPHfEQI3i0g8dB5TM/MEwF38++Szowp1xh7K43j2KA==}
+  '@ahqstore/cli-win32-arm64-msvc@0.6.0':
+    resolution: {integrity: sha512-+njJmWeYimlxbFHa3ALC6II0EGePsnnmDk06ccJPwm9BqSZB2pLGfdJTMyPdy+LPwizQrpGvubQpugdbca+5qg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@ahqstore/cli-win32-ia32-msvc@0.5.4':
-    resolution: {integrity: sha512-t5q7ydLYuVdKBaRR21xOYzV1rXBKyU1exwgHBUpJVuS9CY9SE64dBoHRADTiyhcTjBvWzcD2h8ccH7ZwhslmeQ==}
+  '@ahqstore/cli-win32-ia32-msvc@0.6.0':
+    resolution: {integrity: sha512-7mHZSU7D/LUJMGpBneq1KqCwNkYQ68kV6WETu990Tf9ygS4840Ckxd1p/U74oqd21D2EAa2+nZJ2ekwTMz1VBQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@ahqstore/cli-win32-x64-msvc@0.5.4':
-    resolution: {integrity: sha512-qtc58pPSXnkx196B9a0pmaKaTo2KRcJ16ydcQ4cPEU5ns/I+iviHJLOaYlrxuABOcH99L5PBmDSkzzirlOvdTw==}
+  '@ahqstore/cli-win32-x64-msvc@0.6.0':
+    resolution: {integrity: sha512-ZDx8bP+1rfNF2UZ4e8I+RanhIYylzZ68XwpHIGuGdnfgxluck6oSEnaEqKrSmpaDsl2alp21AWVrXSSimFDs+Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@ahqstore/cli@0.5.4':
-    resolution: {integrity: sha512-zrsaJhrH6Duuy7HeIuQnd3K7Vig4f5FKpsrV1fNqLA3Ed+LkLFAV6DHrYMTNj9DEoO4Mqda7B3RFOQZbXZnPFA==}
+  '@ahqstore/cli@0.6.0':
+    resolution: {integrity: sha512-+noWc01V+60PdfNFcCkmKRf9vKeeiZYOdEI3jXlGv89UlAVgTRvfUKi5LseuUQrsQFqANyVJigMcdFm0MLBULA==}
     engines: {node: '>= 10'}
     hasBin: true
 
@@ -74,8 +74,8 @@ packages:
     resolution: {integrity: sha512-TkBr7QgOmE6ORxvIAhDbZsqPkF7RSqTY4pLTtUQCvr6dTXqvi2fFo46q3h1lxlk/sGMQjqyZ0kEahkD/NyzOHg==}
     engines: {node: '>= 18'}
 
-  '@octokit/auth-app@7.1.0':
-    resolution: {integrity: sha512-cazGaJPSgeZ8NkVYeM/C5l/6IQ5vZnsI8p1aMucadCkt/bndI+q+VqwrlnWbASRmenjOkf1t1RpCKrif53U8gw==}
+  '@octokit/auth-app@7.1.1':
+    resolution: {integrity: sha512-kRAd6yelV9OgvlEJE88H0VLlQdZcag9UlLr7dV0YYP37X8PPDvhgiTy66QVhDXdyoT0AleFN2w/qXkPdrSzINg==}
     engines: {node: '>= 18'}
 
   '@octokit/auth-oauth-app@8.1.1':
@@ -201,44 +201,44 @@ packages:
 
 snapshots:
 
-  '@ahqstore/cli-darwin-arm64@0.5.4':
+  '@ahqstore/cli-darwin-arm64@0.6.0':
     optional: true
 
-  '@ahqstore/cli-darwin-universal@0.5.4':
+  '@ahqstore/cli-darwin-universal@0.6.0':
     optional: true
 
-  '@ahqstore/cli-darwin-x64@0.5.4':
+  '@ahqstore/cli-darwin-x64@0.6.0':
     optional: true
 
-  '@ahqstore/cli-linux-arm64-gnu@0.5.4':
+  '@ahqstore/cli-linux-arm64-gnu@0.6.0':
     optional: true
 
-  '@ahqstore/cli-linux-x64-gnu@0.5.4':
+  '@ahqstore/cli-linux-x64-gnu@0.6.0':
     optional: true
 
-  '@ahqstore/cli-win32-arm64-msvc@0.5.4':
+  '@ahqstore/cli-win32-arm64-msvc@0.6.0':
     optional: true
 
-  '@ahqstore/cli-win32-ia32-msvc@0.5.4':
+  '@ahqstore/cli-win32-ia32-msvc@0.6.0':
     optional: true
 
-  '@ahqstore/cli-win32-x64-msvc@0.5.4':
+  '@ahqstore/cli-win32-x64-msvc@0.6.0':
     optional: true
 
-  '@ahqstore/cli@0.5.4':
+  '@ahqstore/cli@0.6.0':
     optionalDependencies:
-      '@ahqstore/cli-darwin-arm64': 0.5.4
-      '@ahqstore/cli-darwin-universal': 0.5.4
-      '@ahqstore/cli-darwin-x64': 0.5.4
-      '@ahqstore/cli-linux-arm64-gnu': 0.5.4
-      '@ahqstore/cli-linux-x64-gnu': 0.5.4
-      '@ahqstore/cli-win32-arm64-msvc': 0.5.4
-      '@ahqstore/cli-win32-ia32-msvc': 0.5.4
-      '@ahqstore/cli-win32-x64-msvc': 0.5.4
+      '@ahqstore/cli-darwin-arm64': 0.6.0
+      '@ahqstore/cli-darwin-universal': 0.6.0
+      '@ahqstore/cli-darwin-x64': 0.6.0
+      '@ahqstore/cli-linux-arm64-gnu': 0.6.0
+      '@ahqstore/cli-linux-x64-gnu': 0.6.0
+      '@ahqstore/cli-win32-arm64-msvc': 0.6.0
+      '@ahqstore/cli-win32-ia32-msvc': 0.6.0
+      '@ahqstore/cli-win32-x64-msvc': 0.6.0
 
   '@octokit/app@15.1.0':
     dependencies:
-      '@octokit/auth-app': 7.1.0
+      '@octokit/auth-app': 7.1.1
       '@octokit/auth-unauthenticated': 6.1.0
       '@octokit/core': 6.1.2
       '@octokit/oauth-app': 7.1.3
@@ -246,7 +246,7 @@ snapshots:
       '@octokit/types': 13.5.0
       '@octokit/webhooks': 13.3.0
 
-  '@octokit/auth-app@7.1.0':
+  '@octokit/auth-app@7.1.1':
     dependencies:
       '@octokit/auth-oauth-app': 8.1.1
       '@octokit/auth-oauth-user': 5.1.1

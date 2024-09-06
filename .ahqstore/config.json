@@ -10,26 +10,39 @@
       "repo": "sample-app"
     },
     "platform": {
-      "installType": "Both",
-      "win32Platform": "WindowsZip",
-      "linuxPlatform": "LinuxAppImage",
-      "win32Options": {
-        "deps": [],
+      "winAmd64Platform": null,
+      "winArm64Platform": null,
+      "linuxAmd64Platform": null,
+      "linuxArm64Platform": null,
+      "linuxArm32Platform": null,
+      "androidUniversal": null,
+      "winAmd64Options": {
         "zip_file_exec": "electron.exe",
         "exe_installer_args": []
       },
-      "linuxOptions": {}
+      "winArm64Options": {
+        "zip_file_exec": null,
+        "exe_installer_args": []
+      }
     },
     "finder": {
       "windowsAmd64Finder": {
         "startsWith": "electron",
         "endsWith": "-win.zip"
       },
+      "windowsArm64Finder": null,
       "linuxAmd64Finder": {
         "startsWith": "electron-",
         "endsWith": ".AppImage"
-      }
-    }
+      },
+      "linuxArm64Finder": null,
+      "linuxArm32Finder": null,
+      "androidUniversalFinder": null
+    },
+    "site": null,
+    "source": null,
+    "redistributed": null,
+    "license_or_tos": null
   },
   "jIvEpRUUzlqFWC2Wb404": {
     "appId": "jIvEpRUUzlqFWC2Wb404",
@@ -42,25 +55,38 @@
       "repo": "sample-app"
     },
     "platform": {
-      "installType": "Both",
-      "win32Platform": "WindowsInstallerMsi",
-      "linuxPlatform": "LinuxAppImage",
-      "win32Options": {
-        "deps": [],
-        "zip_file_exec": "",
+      "winAmd64Platform": "WindowsInstallerMsi",
+      "winArm64Platform": null,
+      "linuxAmd64Platform": "LinuxAppImage",
+      "linuxArm64Platform": null,
+      "linuxArm32Platform": null,
+      "androidUniversal": null,
+      "winAmd64Options": {
+        "zip_file_exec": "electron.exe",
         "exe_installer_args": []
       },
-      "linuxOptions": {}
+      "winArm64Options": {
+        "zip_file_exec": null,
+        "exe_installer_args": []
+      }
     },
     "finder": {
       "windowsAmd64Finder": {
-        "contains": "Tauri",
+        "startsWith": "Tauri",
         "endsWith": ".msi"
       },
+      "windowsArm64Finder": null,
       "linuxAmd64Finder": {
         "startsWith": "sample-tauri-app",
         "endsWith": ".AppImage"
-      }
-    }
+      },
+      "linuxArm64Finder": null,
+      "linuxArm32Finder": null,
+      "androidUniversalFinder": null
+    },
+    "site": null,
+    "source": null,
+    "redistributed": null,
+    "license_or_tos": null
   }
 }

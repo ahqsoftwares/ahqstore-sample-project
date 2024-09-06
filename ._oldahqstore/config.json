@@ -1,0 +1,66 @@
+{
+  "U4StnJPm5ssnwpDZHZn4": {
+    "appId": "U4StnJPm5ssnwpDZHZn4",
+    "appShortcutName": "Electron (Sample Application)",
+    "appDisplayName": "Test Electron App",
+    "authorId": "1",
+    "description": "A Test Electron Application",
+    "repo": {
+      "author": "ahqstore",
+      "repo": "sample-app"
+    },
+    "platform": {
+      "installType": "Both",
+      "win32Platform": "WindowsZip",
+      "linuxPlatform": "LinuxAppImage",
+      "win32Options": {
+        "deps": [],
+        "zip_file_exec": "electron.exe",
+        "exe_installer_args": []
+      },
+      "linuxOptions": {}
+    },
+    "finder": {
+      "windowsAmd64Finder": {
+        "startsWith": "electron",
+        "endsWith": "-win.zip"
+      },
+      "linuxAmd64Finder": {
+        "startsWith": "electron-",
+        "endsWith": ".AppImage"
+      }
+    }
+  },
+  "jIvEpRUUzlqFWC2Wb404": {
+    "appId": "jIvEpRUUzlqFWC2Wb404",
+    "appShortcutName": "Tauri (Sample Application)",
+    "appDisplayName": "Test Tauri App",
+    "authorId": "1",
+    "description": "A Test Tauri Application",
+    "repo": {
+      "author": "ahqstore",
+      "repo": "sample-app"
+    },
+    "platform": {
+      "installType": "Both",
+      "win32Platform": "WindowsInstallerMsi",
+      "linuxPlatform": "LinuxAppImage",
+      "win32Options": {
+        "deps": [],
+        "zip_file_exec": "",
+        "exe_installer_args": []
+      },
+      "linuxOptions": {}
+    },
+    "finder": {
+      "windowsAmd64Finder": {
+        "contains": "Tauri",
+        "endsWith": ".msi"
+      },
+      "linuxAmd64Finder": {
+        "startsWith": "sample-tauri-app",
+        "endsWith": ".AppImage"
+      }
+    }
+  }
+}
